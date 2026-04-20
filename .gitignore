@@ -1,0 +1,7 @@
+# Interni dokumenti
+opisprojekta.md
+*.tex
+
+# OS datoteke
+.DS_Store
+Thumbs.db
