@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <link rel="stylesheet" href="../styles/style.css">
+    <meta charset="UTF-8">
+    <title>Rezervacije | Beefsteak Zadar</title>
+</head>
+<body>
+    <header>
+        <h1>Beefsteak Zadar</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Početna</a></li>
+                <li><a href="jelovnik.html">Jelovnik</a></li>
+                <li><a href="o-nama.html">Naša priča</a></li>
+                <li><a href="rezervacije.html" class="active">Rezervacije</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Rezervirajte svoj stol</h2>
+            <form action="#">
+                <div>
+                    <label for="ime">Ime i prezime:</label>
+                    <input type="text" id="ime" name="ime" required>
+                </div>
+                <div>
+                    <label for="email">E-mail adresa:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="datum">Datum rezervacije:</label>
+                    <input type="date" id="datum" name="datum" required>
+                </div>
+                <div>
+                    <label for="broj-osoba">Broj osoba (1-10):</label>
+                    <input type="number" id="broj-osoba" name="broj-osoba" min="1" max="10" required>
+                </div>
+                <div>
+                    <label for="napomena">Posebne želje:</label>
+                    <textarea id="napomena" name="napomena"></textarea>
+                </div>
+                <button type="submit">Pošalji zahtjev</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Telefon: +385 23 123 456</p>
+    </footer>
+</body>
+</html>

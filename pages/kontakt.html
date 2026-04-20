@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <link rel="stylesheet" href="../styles/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt | Beefsteak Zadar</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Beefsteak Zadar</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Početna</a></li>
+                <li><a href="jelovnik.html">Jelovnik</a></li>
+                <li><a href="o-nama.html">Naša priča</a></li>
+                <li><a href="rezervacije.html">Rezervacije</a></li>
+                <li><a href="kontakt.html" class="active">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="kontakt-info">
+            <h2>Gdje se nalazimo?</h2>
+            <div class="info-grid">
+                <div class="podaci">
+                    <p><strong>Adresa:</strong> Ulica morskih vila 14, Borik, 23000 Zadar</p>
+                    <p><strong>Telefon:</strong> <a href="tel:+38523123456">+385 23 123 456</a></p>
+                    <p><strong>Email:</strong> info@beefsteak-zadar.hr</p>
+                </div>
+                
+                <div class="radno-vrijeme">
+                    <h3>Radno vrijeme</h3>
+                    <p>Ponedjeljak - Četvrtak: 12:00 - 23:00</p>
+                    <p>Petak - Subota: 12:00 - 00:00</p>
+                    <p>Nedjelja: 13:00 - 22:00</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="kontakt-forma">
+            <h2>Pošaljite nam poruku</h2>
+            <form action="#">
+                <div>
+                    <label for="ime">Vaše ime:</label>
+                    <input type="text" id="ime" name="ime" placeholder="Npr. Ante Antić" required>
+                </div>
+                <div>
+                    <label for="naslov">Naslov poruke:</label>
+                    <select id="naslov" name="naslov">
+                        <option value="upit">Opći upit</option>
+                        <option value="pohvala">Pohvala/Kritika</option>
+                        <option value="posao">Prijava za posao</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="poruka">Vaša poruka:</label>
+                    <textarea id="poruka" name="poruka" rows="5" required placeholder="Pišite nam..."></textarea>
+                </div>
+                <button type="submit" class="btn-send">Pošalji poruku</button>
+            </form>
+        </section>
+
+        <section class="mapa">
+            <h3>Pronađite nas na mapi</h3>
+            <div style="width: 100%; height: 300px; background-color: #333; display: flex; align-items: center; justify-content: center; color: #666;">
+                <p>[Ovdje će doći Google Maps iframe u CSS fazi]</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Beefsteak Zadar. Savršeno meso, svaki put.</p>
+    </footer>
+</body>
+</html>

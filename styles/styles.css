@@ -1,0 +1,188 @@
+/* =========================================
+   1. VARIJABLE (Design Tokens)
+   ========================================= */
+:root {
+    --primarna-boja: #d35400;    /* Boja bakra/vatre */
+    --pozadina-tamna: #121212;   /* Skoro crna */
+    --sekundarna-tamna: #1e1e1e; /* Tamno siva za kartice */
+    --boja-teksta: #f4f4f4;      /* Prljavo bijela */
+    --boja-teksta-muted: #aaaaaa;
+    --font-glavni: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --gap: 20px;
+}
+
+/* =========================================
+   2. OSNOVNI RESET I STILOVI (Base)
+   ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-glavni);
+    background-color: var(--pozadina-tamna);
+    color: var(--boja-teksta);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* =========================================
+   3. LAYOUT (Header, Nav, Footer)
+   ========================================= */
+header {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 1.5rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #333;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav a:hover, nav a.active {
+    color: var(--primarna-boja);
+}
+
+footer {
+    background-color: #000;
+    padding: 3rem 5%;
+    text-align: center;
+    margin-top: 50px;
+    border-top: 1px solid #333;
+    font-size: 0.9rem;
+    color: var(--boja-teksta-muted);
+}
+
+/* =========================================
+   4. KOMPONENTE (Hero, Kartice, Forme)
+   ========================================= */
+
+/* Hero sekcija na index.html */
+.hero {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                url('../assets/img/hero-bg.jpg') no-repeat center center/cover;
+    padding: 0 10%;
+}
+
+.hero h2 { font-size: 3rem; }
+
+.btn {
+    display: inline-block;
+    background-color: var(--primarna-boja);
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 4px;
+    margin-top: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background-color: #e67e22;
+    transform: translateY(-2px);
+}
+
+/* Grid za jela (Jelovnik i Početna) */
+.jela-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--gap);
+    padding: 2rem 5%;
+}
+
+article {
+    background-color: var(--sekundarna-tamna);
+    padding: 20px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+article:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+/* Forme (Rezervacije i Kontakt) */
+form {
+    max-width: 600px;
+    margin: 2rem auto;
+    background: var(--sekundarna-tamna);
+    padding: 40px;
+    border-radius: 8px;
+}
+
+form div { margin-bottom: 15px; }
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--boja-teksta-muted);
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+    color: #fff;
+    border-radius: 4px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--primarna-boja);
+}
+
+/* Pristupačnost - vidljiv fokus */
+a:focus, button:focus {
+    outline: 2px solid var(--primarna-boja);
+    outline-offset: 4px;
+}
+
+/* =========================================
+   5. RESPONZIVNOST (Media Queries)
+   ========================================= */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    nav ul {
+        gap: 15px;
+        font-size: 0.9rem;
+    }
+
+    .hero h2 { font-size: 2rem; }
+}
