@@ -1,47 +1,247 @@
 <!DOCTYPE html>
 <html lang="hr">
 <head>
-    <link rel="stylesheet" href="../styles/styles.css">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jelovnik | Beefsteak Zadar</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+
+    <style>
+        .menu-img {
+            width: 80px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Beefsteak Zadar</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Početna</a></li>
-                <li><a href="jelovnik.html" class="active">Jelovnik</a></li>
-                <li><a href="o-nama.html">Naša priča</a></li>
-                <li><a href="rezervacije.html">Rezervacije</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section>
-            <h2>Naši Premium Rezovi</h2>
-            <article>
-                <h3>Steakovi</h3>
-                <ul>
-                    <li><strong>Ribeye Steak</strong> - 350g, odležan 21 dan.</li>
-                    <li><strong>Tomahawk</strong> - 1kg, za prave ljubitelje mesa.</li>
-                    <li><strong>Beefsteak Classic</strong> - 250g, najmekši rez.</li>
-                </ul>
-            </article>
-            <article>
-                <h3>Prilozi</h3>
-                <ul>
-                    <li>Domaći krumpirići s ružmarinom</li>
-                    <li>Povrće sa žara</li>
-                    <li>Umak od zelenog papra</li>
-                </ul>
-            </article>
+<header>
+    <div class="logo    no-select">BEEFSTEAK <span>ZADAR</span></div>
+    <nav>
+        <ul>
+            <li><a href="../index.html" class="no-select"> Početna</a></li>
+            <li><a href="jelovnik.html" class="active no-select">Jelovnik</a></li>
+            <li><a href="o-nama.html" class="no-select">O nama</a></li>
+            <li><a href="kontakt.html" class="no-select">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="container">
+    <h1 class="page-title" style="display: flex; align-items: center; justify-content: center;">
+        <img src="../assets/img/menu.png" width="69" style="margin-right: 15px;">
+        Naš Menu & Cjenik
+    </h1>
+
+    <div class="jelovnik-grid-layout">
+
+        <!-- PREDJELA -->
+        <section class="menu-section">
+            <h2>Predjela & Juhe</h2>
+            <table class="menu-table">
+                <thead>
+                    <tr>
+                        <th>Slika</th>
+                        <th>Jelo</th>
+                        <th>Opis</th>
+                        <th>Cijena</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="../assets/img/goveda-juha.jpg" class="menu-img"></td>
+                        <td>Domaća goveđa juha</td>
+                        <td>S domaćim rezancima i povrćem</td>
+                        <td>5,50 €</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../assets/img/carpaccio.jpg" class="menu-img"></td>
+                        <td>Carpaccio od bifteka</td>
+                        <td>Rukola, grana padano, emulzija citrusa</td>
+                        <td>15,50 €</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../assets/img/prsut-paski-sir.jpg" class="menu-img"></td>
+                        <td>Paški sir i pršut</td>
+                        <td>Selekcija domaćih narezaka</td>
+                        <td>14,00 €</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
-    </main>
 
-    <footer>
-        <p>&copy; 2026 Beefsteak Zadar. Sva prava pridržana.</p>
-    </footer>
+        <!-- ODRESCI -->
+        <section class="menu-section">
+            <h2>Vrhunski Odresci</h2>
+            <table class="menu-table">
+                <thead>
+                    <tr>
+                        <th>Slika</th>
+                        <th>Jelo</th>
+                        <th>Gramatura</th>
+                        <th>Cijena</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="../assets/img/ribeye.jpg" class="menu-img"></td>
+                        <td>Ribeye Steak (Dry-aged)</td>
+                        <td>350g</td>
+                        <td>34,00 €</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../assets/img/tbone.jpg" class="menu-img"></td>
+                        <td>T-Bone Steak</td>
+                        <td>500g</td>
+                        <td>42,00 €</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../assets/img/filet-mignon.jpg" class="menu-img"></td>
+                        <td>Fillet Mignon</td>
+                        <td>250g</td>
+                        <td>32,00 €</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- GLAVNA JELA -->
+        <section class="menu-section">
+            <h2>Glavna Jela</h2>
+            <table class="menu-table">
+                <thead>
+                    <tr>
+                        <th>Slika</th>
+                        <th>Jelo</th>
+                        <th>Opis</th>
+                        <th>Cijena</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="../assets/img/burger.jpg" class="menu-img"></td>
+                        <td>Beef Burger</td>
+                        <td>Domaće pecivo, 100% junetina</td>
+                        <td>14,50 €</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../assets/img/janjetina.jpg" class="menu-img"></td>
+                        <td>Janjeći kotleti</td>
+                        <td>S dalmatinskim biljem</td>
+                        <td>26,00 €</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- SALATE -->
+        <section class="menu-section">
+            <h2>Salate</h2>
+            <table class="menu-table">
+                <thead>
+                    <tr>
+                        <th>Slika</th>
+                        <th>Salata</th>
+                        <th>Opis</th>
+                        <th>Cijena</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="../assets/img/mijesana-salata.jpg" class="menu-img"></td>
+                        <td>Miješana sezonska</td>
+                        <td>Svježe sezonsko povrće</td>
+                        <td>4,50 €</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../assets/img/rukola.jpg" class="menu-img"></td>
+                        <td>Rukola s cherry rajčicama</td>
+                        <td>S listićima parmezana</td>
+                        <td>6,00 €</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../assets/img/sopska.jpg" class="menu-img"></td>
+                        <td>Šopska salata</td>
+                        <td>Krastavci, rajčica, paprika, feta sir</td>
+                        <td>5,50 €</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- PRILOZI -->
+        <section class="menu-section">
+            <h2>Prilozi</h2>
+            <table class="menu-table">
+                <thead>
+                    <tr>
+                        <th>Slika</th>
+                        <th>Prilog</th>
+                        <th>Opis</th>
+                        <th>Cijena</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="../assets/img/pomfrit.jpg" class="menu-img"></td>
+                        <td>Domaći krumpirići</td>
+                        <td>Prženi s morskom soli</td>
+                        <td>4,50 €</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../assets/img/povrce-zar.jpg" class="menu-img"></td>
+                        <td>Povrće na žaru</td>
+                        <td>Tikvice, paprike, patlidžan</td>
+                        <td>6,00 €</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../assets/img/batat.jpg" class="menu-img"></td>
+                        <td>Batat pomfrit</td>
+                        <td>Hrskavi batat s umakom</td>
+                        <td>5,50 €</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- PIĆA -->
+        <section class="menu-section">
+            <h2>Vinska Karta & Pića</h2>
+            <table class="menu-table">
+                <thead>
+                    <tr>
+                        <th>Slika</th>
+                        <th>Piće</th>
+                        <th>Količina</th>
+                        <th>Cijena</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="../assets/img/vino.jpg" class="menu-img"></td>
+                        <td>Zinfandel (Crno vino)</td>
+                        <td>0.75l</td>
+                        <td>45,00 €</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../assets/img/pivo.jpg" class="menu-img"></td>
+                        <td>Craft pivo (Lokalno)</td>
+                        <td>0.33l</td>
+                        <td>4,50 €</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </div>
+</main>
+
+<footer style="text-align: center; padding: 20px; margin-top: 40px;">
+    <p>© 2026 Beefsteak Zadar. Studij IT, UNIZD.</p>
+</footer>
+
 </body>
 </html>
