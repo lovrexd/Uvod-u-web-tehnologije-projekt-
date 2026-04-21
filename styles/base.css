@@ -1,0 +1,31 @@
+/* BASE (Reset i osnove) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--dark);
+    color: var(--light);
+    line-height: 1.6;
+    
+    /* Footer uvijek na dnu ekrana */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    margin: 0;
+}
+
+/* Glavni sadržaj zauzima sav preostali prostor i gura footer na dno */
+main {
+    flex: 1;
+}
+
+/* Pomoćna klasa za onemogućavanje označavanja teksta */
+.no-select {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none;     /* IE 10 i Edge */
+    user-select: none;         /* Standard */
+}

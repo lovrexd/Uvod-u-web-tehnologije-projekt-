@@ -1,0 +1,121 @@
+/* COMPONENTS (Gumbi, forme, kartice, tablice, hero) */
+
+/* Hero sekcija */
+.hero {
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../assets/img/hero.jpg') center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/img/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+/* Gumbi */
+.btn {
+    display: inline-block;
+    background: var(--primary);
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.btn:hover { 
+    background: #e67e22; 
+}
+
+/* Kartice (Cards) */
+.card {
+    background: var(--gray);
+    padding: 20px;
+    border-radius: 8px;
+    border-top: 4px solid var(--primary);
+}
+
+/* Forme */
+.form-container {
+    background: var(--gray);
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-group { 
+    margin-bottom: 15px; 
+}
+
+label { 
+    display: block; 
+    margin-bottom: 5px; 
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    background: #121212;
+    border: 1px solid #444;
+    color: #fff;
+}
+
+/* Tablice za jelovnik (Vježba 3 i 7) */
+.menu-section h2 {
+    border-left: 4px solid var(--primary);
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+
+.menu-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.menu-table th, .menu-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #333;
+}
+
+.menu-table th {
+    background-color: var(--primary);
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+.menu-table tr:hover {
+    background: rgba(211, 84, 0, 0.1);
+    transition: background 0.2s;
+}
+
+/* Zadnji stupac s cijenom i fiksiranje eura u istom redu */
+.menu-table td:last-child {
+    font-weight: bold;
+    color: var(--primary);
+    text-align: right;
+    white-space: nowrap; 
+}
+
+@media (max-width: 500px) {
+    .menu-table {
+        font-size: 0.9rem;
+    }
+}

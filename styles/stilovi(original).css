@@ -216,6 +216,11 @@ main
     -ms-user-select: none;     /* IE 10 i Edge */
     user-select: none;         /* Standardni sintaks (Chrome, Firefox, Opera) */
 }
-.style-6{
-background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('assets/img/hero.jpg'); background-size: cover; background-position: center; color: white; padding: 100px 20px; text-align: center;
+.hero-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/img/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
 }
