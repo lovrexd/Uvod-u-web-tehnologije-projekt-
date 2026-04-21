@@ -71,7 +71,6 @@ input {
     color: #fff;
 }
 
-/* Tablice za jelovnik (Vježba 3 i 7) */
 .menu-section h2 {
     border-left: 4px solid var(--primary);
     padding-left: 15px;
@@ -106,7 +105,7 @@ input {
     transition: background 0.2s;
 }
 
-/* Zadnji stupac s cijenom i fiksiranje eura u istom redu */
+/* Zadnji stupac s cijenom i euri u istome redu */
 .menu-table td:last-child {
     font-weight: bold;
     color: var(--primary);

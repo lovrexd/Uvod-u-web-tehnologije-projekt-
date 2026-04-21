@@ -25,7 +25,7 @@
     text-transform: uppercase;
 }
 
-/* Grid layout za "O nama" sadržaj (Vježba 5) */
+/* Grid layout za "O nama" */
 .about-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -48,7 +48,7 @@
     text-align: justify;
 }
 
-/* Stilovi za slike i opise (Vježba 3) */
+/* Stilovi za slike i opise */
 .about-figure {
     position: relative;
     border-radius: 15px;
@@ -76,7 +76,6 @@
     font-weight: bold;
 }
 
-/* Responzivnost (Vježba 6) */
 @media (max-width: 900px) {
     .about-grid {
         grid-template-columns: 1fr;

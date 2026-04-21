@@ -52,7 +52,7 @@ nav a:hover, nav a.active {
     margin-top: 20px;
 }
 
-/* Layout za jelovnik (Vježba 5) */
+/* Layout za jelovnik */
 .jelovnik-grid-layout {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
@@ -60,7 +60,6 @@ nav a:hover, nav a.active {
     margin-top: 30px;
 }
 
-/* Responsive prilagodbe za layout (Vježba 6) */
 @media (max-width: 768px) {
     header { 
         flex-direction: column; 
