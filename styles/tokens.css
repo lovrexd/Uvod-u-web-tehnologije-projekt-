@@ -7,3 +7,83 @@
     --font-main: 'Segoe UI', sans-serif;
     --transition: 0.3s ease;
 }
+/* Hero sekcija za podstranice */
+.hero-small {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../assets/img/hero.jpg') center/cover;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.hero-small h1 {
+    font-size: 3rem;
+    color: var(--primary);
+    text-transform: uppercase;
+}
+
+/* Grid layout za "O nama" sadržaj (Vježba 5) */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px; /* Veliki razmak između teksta i slike za profesionalni izgled */
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.section-title-left {
+    border-left: 5px solid var(--primary);
+    padding-left: 20px;
+    margin-bottom: 25px;
+    font-size: 2rem;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: #ccc;
+    text-align: justify;
+}
+
+/* Stilovi za slike i opise (Vježba 3) */
+.about-figure {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+    transition: var(--transition);
+}
+
+.about-figure:hover {
+    transform: translateY(-10px);
+}
+
+.about-figure img {
+    width: 100%;
+    display: block;
+    filter: grayscale(20%);
+}
+
+.about-figure figcaption {
+    background: var(--primary);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+/* Responzivnost (Vježba 6) */
+@media (max-width: 900px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .hero-small h1 {
+        font-size: 2.2rem;
+    }
+}

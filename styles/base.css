@@ -1,4 +1,10 @@
-/* BASE (Reset i osnove) */
+/* ==============================================
+   BASE STILOVI
+   Reset-lite, body, linkovi, slike, skip link.
+   Ovisi o tokens.css (mora biti ucitan prije).
+   ============================================== */
+
+/* ---------- Reset-lite ---------- */
 * {
     margin: 0;
     padding: 0;
