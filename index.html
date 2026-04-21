@@ -11,17 +11,24 @@
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
 </head>
 <body>
-    <header>
-        <div class="logo no-select"> BEEFSTEAK <span>ZADAR</span></div>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active no-select">Početna</a></li>
-                <li><a href="pages/jelovnik.html" class="no-select">Jelovnik</a></li>
-                <li><a href="pages/o-nama.html" class="no-select">O nama</a></li>
-                <li><a href="pages/kontakt.html" class="no-select">Kontakt</a></li>
-            </ul>
-        </nav>
-    </header>
+ <header>
+    <div class="logo no-select">BEEFSTEAK <span>ZADAR</span></div>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    
+    <label for="nav-toggle" class="nav-toggle-label" aria-label="Otvori izbornik">
+        <span></span>
+    </label>
+
+    <nav aria-label="Glavna navigacija">
+        <ul>
+            <li><a href="index.html" class="active">Početna</a></li>
+            <li><a href="pages/jelovnik.html">Jelovnik</a></li>
+            <li><a href="pages/o-nama.html">O nama</a></li>
+            <li><a href="pages/kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
 
     <main>
         <section class="hero hero-section">

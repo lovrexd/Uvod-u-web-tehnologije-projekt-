@@ -44,7 +44,6 @@ nav a:hover, nav a.active {
     color: var(--primary); 
 }
 
-/* Grid za ponudu */
 .grid-ponuda {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -52,7 +51,6 @@ nav a:hover, nav a.active {
     margin-top: 20px;
 }
 
-/* Layout za jelovnik */
 .jelovnik-grid-layout {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
@@ -74,5 +72,70 @@ nav a:hover, nav a.active {
 @media (max-width: 500px) {
     .jelovnik-grid-layout {
         grid-template-columns: 1fr;
+    }
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    display: none;
+    cursor: pointer;
+    padding: 10px; 
+    z-index: 2000;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    position: relative;
+    transition: 0.3s ease;
+    border-radius: 2px;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    content: '';
+    position: absolute;
+}
+
+.nav-toggle-label span::before { top: -8px; }
+.nav-toggle-label span::after { top: 8px; }
+
+@media (max-width: 768px) {
+    /* Prikaži hamburger ikonu */
+    .nav-toggle-label {
+        display: block;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        height: 100vh;
+        background: var(--dark);
+        transition: right 0.4s ease;
+        z-index: 1000; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: -10px 0 20px rgba(0,0,0,0.8);
+    }
+
+    nav ul {
+        flex-direction: column; 
+        gap: 30px;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .nav-toggle:checked ~ nav {
+        right: 0;
     }
 }
